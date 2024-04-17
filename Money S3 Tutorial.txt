@@ -1,0 +1,155 @@
+Založení agendy
+1. Na liště money, v nabídce nová agenda, dám "nová agenda"
+2. V průvodci přidáním nové agendy dám hned "Další"
+3. Strana 1/6 Zadání IČ/IČO (osmimístné identifikační číslo podnikatelského subjektu): buď si vymyslím nebo zadám ze zadání, pokud vyskočí chyba, znamená to, že firma ještě neexistuje (lépe pro mě)
+4. Strana 2/6 Popis agendy, adresa, IČ/IČO a DIČ firmy: všechno musí být vyplněno
+5. Strana 3/6 Telefonní a bankovní spojení: opět vše vyplním, pokud při pokračování vyběhne hláška, že zadaný bankovní účet neodpovídá kontrolnímu algoritmu Modulo 11, který je platný pro všechny tuzemské bankovní účty, dám "ignorovat"
+6. Strana 4/6 Výběr účetního roku: vyberu takový rok, ve kterém agendu zakládám
+7. Strana 5/6 Naplnění agendy účetními daty: dám "z agendy"
+8. Strana 5/6 Výběr agendy a roku: Vyberu "J. Bohatý" a nejaktuálnější rok
+9. Strana 6/6 Přidání konfiguračních seznamů: vše je potřebné, tudíž nechám vše zaškrtlé a dám "další"
+10. Strana 6/6 Převzetí seznamů adresáře a zásob: zde nechávám vše NEzaškrtlé a dávám "Dokončit"
+11. Nastavení agendy: zkontroluji údaje, doplním to, co chybí (např. E-mail a WWW), zkontroluji typ osoby a subjektu, v záložce "Logo" přidám obrázek související s mojí firmou, dávám "OK"
+12. Nastavení účetního roku: zkontroluji informace v záložce "Obecné" a jestli vše sedí, dávám "OK" a Agenda je založena
+
+Bankovní účty a pokladny
+1. Nástroje->Seznamy->Bankovní účty a pokladny
+2. Účet nebo pokladnu zatrhávám JEN když ZAKLÁDÁM nový bankovní účet nebo pokladnu (když vytvářím účet, zatrhnu účet; když vytvářím pokladnu, zatrhnu pokladnu)
+3. Při zakládání účtu zadám zkratku, popis pro účet (zkratka: BAN, popis: Běžný bankovní účet), počátační stav peněz na účtu a číslo účtu; při zakládání pokladny zadám zkratku a popis pro pokladnu (zkratka: VPOK, popis: Valutová pokladna), její počatní stav peněz a nějakého pokladníka (klidně sebe), pokud zadávám cizí měnu, zadám ji do kolonky "cizí měna" (zvolím PEVNÝ KURZ, označím EMU (Euro) a dám "opravit", zkontroluji zemi, kód (země:EMU, kód:EUR), dám "přidat období", zvolím daný kurz a období ke kterému je kurz aktuální (vyhledám si na internetu) a potvrdím pomocí "OK" všechny karty
+
+Číselné řady
+1. Nástroje->Seznamy->Číselné řady->"Přidat"
+2. "Řada" (obsahuje zkratku písmen účetního dokladu, např. Příjmový pokladní doklad), "Číslo" (označení jednotlivých dokladů), "Počet míst" (nechávám v původním nastavení), "Název" (obsahuje přesný název konkrétního dokladu o který se jedná), "Účetnictví a pohledávky, závazky" (slouží k výběru skupiny účetních dokladů, kde budu zatrhávat požadovanou číselnou řadu), "Číselnou řadu používat pro" (zde musím zatrhnout požadovanou funkci, pro kterou je účetní doklad určen, každý doklad má svou určitou funkci)
+3. Vše odklikám "OK" a zbyde mi tam jen moje číselná řada, kterou jsem sám vytvořil, zbytek smažu
+
+Adresář
+1. Navigátor->Adresář->Adresář
+2. Zkontroluji, zda jsem v kolonce "Firmy" (nahoře v liště) a zda jsou označeny (budou vyznačeny) "Firmy, Osoby i skupiny" (vpravo, nahoře v liště)
+3. Označím políčko "Skupina" (zhruba uprostřed) a dám "přidat"
+4. Otevře se mi "Karta skupiny adresáře", doplním "Zkratku" a "Název" dané skupiny, kterou chci přidat a dám "OK"
+5. Skupina->Dodavatelé->Přepnu se na Provoznu (Kliknutím na ni ji zase vyberu) a dám "Přidat"
+6. V "Kartě adresáře" pro usnadnění práce a přesnější informace vyhledám daný podnikatelský subjekt prostřednictvím IČ či podle názvu nebo sídla firmy
+7. Uvedu dané IČ do příslušné kolonky, kliknu na tlačítko/písmenka "IČ" a při hlášce "Potvrďte" dám Ano
+8. Načtené údaje doplním o "Bankovní účet", "Kód banky", "Telefon", "FAX", "Mobil", "WWWW stránky", případně i o "logo" firmy
+9. Přidám kontaktní osobu (vyplním její jméno a příjmení, pracovní funkci
+10. Vše opět odklikám přes "OK", jestli by se stalo, že vyskočí hláška, že mnou zadaný bankovní účet neodpovídá nastavení účtů platných v ČR, dávám "Ignorovat"
+
+Sklad
+1. Sklad->Sklady a ceníky
+2. Zde kliknu na "přidat sklad"
+3. V kartě "Sklad" v části "Sklad" vyplním "název skladu", "kód skladu" (např. nějaká zkratka názvu skladu), pokud zaškrtnu "Stav zásoby do mínusu", pak NEzaškrtnu "Neupozorňovat při vyskladňování do mínusu", pokud vytvářím více skladů, pak si jeden označím jako "preferovaný sklad"
+4. V kartě "Sklad" v části "Přednastavení" ("Obecné" dole vlevo) vyberu "Druh zásoby" (např.zboží) a vyberu skutečné DPH pro prodej i nákup, zbytek nechám tak, jak je
+5. V kartě "Sklad" v části "Přednastavení" ("Ceny" dole vlevo) zaškrtnu "Cena bez DPH" a zbytek opět nechám tak, jak je
+6. V kartě "Sklad" v části "Přednastavení" ("Zaúčtování" dole vlevo) pro "Předkontaci pro nákup" vyberu "nákup zboží" a pro "Předkontaci pro prodej" vyberu "prodej zboží"
+7. Vše odklikám pomocí "OK"
+
+Skladové skupiny a karty
+1. Zkontroluji zda jsem ve správném skladu
+2. Sklad->Zásoby na skladě
+3. Na horní liště zkontroluji, zda mám otevřené "zásoby na skladě"
+4. Kliknu na "přidat", poté "přidat skupinu"
+5. Karta "Skladová skupina" v liště "Skupina" vyplním "název skladové skupiny" a její zkratku (např. zkrácený název skladové skupiny)
+6. Dále na kartě "Skladová skupina" nahoře vpravo zatrhnu "Používat přednastavení skladu", poté dole uvedu "číslo skladové skupiny" (když tvořím první, bude logicky číslo 1)
+7. Poté mohu opět dát "OK"
+8. Podobným způsobem poté tvořím dále i podskupiny, zda je to potřeba
+9. Pokud jsem ve správné skupině (či i podskupině, kde chci přidat nějakou novou zásobu), tak takovou skupinu/podskupinu označím a vlevo nahoře dám "přidat" a zatrhnu "přidat novou zásobu"
+10. V kartě "karta zásoby" vyplním v části "kmenová karta" popis i zkratku produktu, "katalog" (číslo konkrétní zásoby), "hlavní M. J." (např. ks, kg, l, atd.), "záruční doba", "kód státního původu" vždy ČR, "Typ karty" vždy "Jednoduchá karta", nic dalšího NENÍ povinné
+11. V kartě "karta zásoby" v části "Podrobnosti" ověřím, zda se mi vše správně nahrálo
+12. V kartě "karta zásoby" v části "Ceny" zadám "Nákupní cenu bez DPH", u "Kalkulace" nastavuji u základní prodejní ceny (1.pozice) moji marži (rozdíl mezi prodejní a nákupní cenou), u "Skutečnost" naopak na pozicích 2-5 si určuji výši slevy ze základní prodejní ceny (aby mi výpočet fungoval, musím nastavit "Limit M. J."), v "Limit M. J." je 5 limitů M. J. a cenových hladin (1. základní prodejní cena (cena s marží (běžná cena za jeden kus)), 2. například při odběru 5ks 5% sleva, 3. například při odběru 10ks 10% sleva, 4. například při odběru 50ks 20% sleva, 5. například při výprodeji (tato cena nesmí být nižší než je nákupní cena (pokud cena zůstává červená, prodávám zboží levněji, než za jakou cenu jsem ho pořídil)))
+13. Cenu mohu také určit i jiným způsobem a to takovým že, v "nákupní ceně bez DPH" zadám nějakou cenu, v "Kalkulaci" nic nedělám, v "Limit M. J." zadám určitý počet kusů a v "ceně" danou cenu za jakou se má dané množství produktů prodávat
+14. V kartě "karta zásoby" mohu v části "obrázek" přidat obrázek daného produktu
+15. V kartě "karta zásoby" v části "rozšířený dopis" přidávám popisy daného produktu do "popis 1" napíšu něco do "poznámky" a "popis", do "popis 2" napíšu zase něco jiného do "poznámky" a do "popis", atd. (prostě popis daného produktu), dá se zde napravo i vybrat jazyk v kolonce "vyberte jazyk"
+
+Příjem zboží do skladu
+1. navigátor->sklad->vystavení skladového dokladu->příjemka
+2. V kartě "skladová příjemka" vyplním "doklad číslo", doplním "dodavatel", vypíšu "popis dokladu"
+3. V kartě "skladová příjemka" nahoře "přidat zásobu", vyberu "zásobu"
+4. otevře se mi karta "seznam zásob na skladě" zde označím první skupinu společně s první zásobou a dám "OK"
+5. V kartě "přidat položku do příjemky" doplním "počet M. J." a potvrdím "OK"
+6. Poté, co takhle popřidávám vše potřebné můžu "Seznam zásob na skladě" pomocí tlačítka "zavřít" zavřít
+7. V kartě "skladová příjemka" dole zkontroluju zda vše sedí, jak má, poté můžu kartu zavřít pomocí tlačítka "OK"
+8. Pro ověření pohybu zboží ve skladě, v kartě "karta zásoby" označím příslušný "sklad", vyberu danou "zásobu" a záložce "podrobnosti" získám dané informace ohledně dané zásoby (například poslední nákup a dodavatele)
+9. Ve stejné kartě "karta zásoby" v záložce "dodávky" se přesvědčím o tom, že v den nákupu zboží došlo i k jejímu naplnění měrnými jednotkami, dole vidím aktuální množství zboží na skladě v kolonce "Stav zásoby"
+10. přes náhled "skladové příjemky" mohu také celý chod zkontrolovat
+
+Složené skladové karty
+1. Navigátor->Sklad->Zásoby na skladě
+2. Zde přidám další skupinu (například se jménem složené karty)
+3. označím nově vytvořenou skupinu a přidám do ní novou zásobu
+4. V kartě "karta zásoby" na liště "kmenová karta" doplním její "popis", "zkratku", "M. J.", "záruční dobu", "kód st. původu", "typ karty" označím "sada" a kliknu na "definici sestavy"
+5. V kartě "definice sestavy" kliknu na "přidat"
+6. Zde se mi objeví seznam mých zásob na skladě, označím skupinu a vyberu zásobu a dám "OK"
+7. Objeví se mi karta "položka sestavy" zde doplním daný počet kusů a dám "OK"
+8. Poté se mi opět objeví "definice sestavy" dám opět "přidat" a vyberu další zboží do sady, které chci, aby obsahovala
+9. Poté v kartě "definice sestavy" pokud mám vše přidané kliknu na "zavřít"
+10. Pro přidání kompletu musím opět do "karta zásoby" v kolonce "kmenová karta" vyberu u "typ karty" "komplet" a dám tlačítko "definice sestavy"
+11. Opět přidávám dané zboží, co chci aby bylo součástí kompletu, poté, co jsem takhle přidal vše, dám opět "Zavřít"
+12. Poté v "karta zásoby" v kolonce "ceny" zde mohu měnit "kalkulaci" a "základní prodejní cenu", která NIKDY nebude nižší než cena nákupní
+
+Pokladna
+1. Navigátor->účetnictví->pokladna->pokladní doklady
+2. Zde dám vlevo nahoře "nový příjem"
+3. Otevře se mi karta "příjmový pokladní doklad", automaticky by se mi mělo nastavit "číslo dokladu", pokud se tak nestalo, tak ho přidám ručně, přidám i "popis" dokladu
+4. Adresu nastavím přes tlačítko tří teček, kde vyberu skupinu odběratelů a vyberu kontakt
+5. Poté vyberu "pokladnu" (kterou vedu v českých korunách) a potvrdím zas "OK"
+6. Předkontaci vyberu pro prodej zboží "Prodej zboží" a dám "OK"
+7. Členění DPH vyberu "Dodání zboží nebo poskytnutí služby s místem plnění v tuzemsku" (Řádek 1,2) a dám "OK"
+8. V kartě "příjmový pokladní doklad" dole zvolím "Přidat" a vyberu "novou položku"
+9. Otevře se mi karta "karta normální účetní položky", zde vyplním "popis", "cenu za 1ks", "typ ceny" (v tomto případě vždy s DPH), vyberu sazbu DPH a zadám počet "měrných jednotek" a "typ měrných jednotek" a dám "OK"
+10. Pokud vše v kartě "příjmový pokladní doklad" sedí tak, jak má, mohu ho zavřít pomocí tlačítka "OK"
+11. Otevře se mi "peněžní deník", který mohu zavřít
+12. Pokud jsem udělal něco špatně v daném příjmovém pokladním dokladě, mohu v liště nahoře smazat
+13. Navigátor->účetnitctví->pokladna->pokladní doklady
+14. Zde dám vlevo nahoře "nový výdej"
+15. Postupuju úplně stejně, jak když jsem vytvářel PPD
+16. Pozor! U "předkontace" zde dávám "nákup zboží"
+17. V "členění DPH" zde vyberu "Z přijatých zdaň. plnění od plátců - tuzemsko (bez vlivu na majetek) (řádek 40,41)
+18. V kartě "normální účetní položky" vyplním opět "popis", "cenu", "typ ceny", "sazbu DPH", "počet M. J.", a "typ M. J." a dám zas "OK"
+19. Poté v kartě "výdajový pokladní doklad" zkontroluju, že vše sedí, doplním případně "popis dokladu" a dám "OK"
+20. Peněžní deník mohu zase opět zavřít
+
+Objednávky a fakturace
+1.Navigátor->objednávky->objednávky přijaté
+2. Vlevo nahoře dám "přidat"
+3. V kartě "přijatá objednávka" se mi automaticky objeví "doklad číslo", pokud ne, musím ho ručně přidat
+4. Odběratele přidám pomocí záložky "odběratelé", přidám "popis dokladu", "způsob platby" a "dopravu/vyskladnění"
+5. "Datum vystavení" a "vyřídit nejdříve" jsou totožné se dnem, ve kterém objednávku vyplňuji, "vyřídit do" stanovuju sám, v okamžiku uskutečnění objednávky by se mi měl zobrazit datum i v kolonce "vyřízené"
+6. Dole dám "přidat", zde vyberu zásobu, kterou vybírám ze svého skladu, kde mám na kartách zboží své produkty
+7. V kartě "seznam zásob na skladě", označím skupinu, vyberu zásobu a dám "OK"
+8. V kartě "přidat položku do přijaté objednávky" zadám počet m. j. a potvrdím "OK", stejným způsobbem přidávám i další položky
+9. Pokud se mi doplněné zásoby načítají dole v kartě "přijatá objednávka" mohu tuto kartu zavřít pomocí "OK"
+10. Navigátor->fakturace->faktury vystavené
+11. Dám "přidat", v kartě "výběr typu vystavené faktury" dávám "vystavená faktura - zboží" a dám "OK"
+12. V kartě "vystavená faktura - zboží" dám dole "přidat" a "objednávku přijatou"
+13. Objeví se mi "seznam přijatých objednávek", zde označím mnou vytvořenou objednávku a dám "OK"
+14. Vše by se mi mělo načíst z objednávky do karty "vystavená faktura - zboří", pokud vše sedí, mohu dát "OK"
+15. Navigátor->účetnictví->banka->úhrada vystavených faktur a pohledávek
+16. Načte se mi karta "výběr typu účetního dokladu ze seznamu", zde dám "přidat" a vyberu "pro příjmový bankovní doklad"
+17. V kartě "typ účetního dokladu - banka příjem" zadám "zkratku" a jeho celý "název" (PBD, příjmový bankovní doklad) a dám "OK"
+18. V kartě "seznam neuhrazených dokladů" označím položku, kterou chci uhradit a zkontroluju, zda je uveden zde správný odběratel a datum splatnosti, poté dávám "OK"
+19. V kartě "úhrada" zkontroluju částku, kterou platím a dám "OK"
+20. V kartě "seznam hrazených dokladů" potvrdím uhrazenou částku pomocí "OK"
+21. V kartě "příjmový bankovní doklad" zkontroluju zda můj bankovní účet je uveden v korunách českých
+22. doplním předkontaci (vyberu prodej zboží) a dám "OK"
+23. Otevřu si "členění DPH", označím "dodání zboží nebo poskytnutí služby v tuzemsku" a dám "OK"
+24. Zkontroluju celý příjmový bankovní doklad, zda vše sedí, poté ho mohu zavřít pomocí "OK"
+25. Peněžní deník mohu hned opět zavřít
+26. Načte se mi i "seznam bankovních dokladů", který mohu taky opět hned zavřít
+27. Navigátor->objednávky->objednávky vystavené
+28. V objednávce vystavené zadávám "dodavatele", "Datum vystavení a datum vyřídit nejdříve a datum vyřídit do" by se měly automaticky načíst, v kolonce "doprava/vyskladnění" vyberu například "dodavatelem" a zase dole dám "přidat" a dám "zásobu"
+29. Vyberu minimálně dvě položky a u nich doplním měrné jednotky, poté zkontroluju celou vystavenou objednávku a dám "OK"
+30. Navigátor->fakturace->faktury přijaté
+31. V kartě "výběr typu přijatých faktur" označím "přijatá faktura - zboží" a dám "OK"
+32. V kartě "přijatá faktura - zboží" dám dole zase "přidat" a dám "objednávku vystavenou"
+33. V kartě "seznam vystavených objednávek" zkontroluju jenom jestli se jedná o moji vystavenou objednávku a dám "OK"
+34. opět se mi načte karta "přijatá faktura - zboží" zde vše opět zkontroluju a dám "OK"
+35. Navigátor->účetnictví->banka->úhrada přijatých faktur a závazků
+36. Načte se mi karta "výběr typu účetního dokladu ze seznamu" a dám "přidat" a vyberu "pro výdajový bankovní doklad"
+37. V kartě "typ účetního dokladu - banka výdaj" vyplním "zkratku" a "název" (VBD, výdajový bankovní doklad) a dám "OK"
+38. V kartě "seznam neuhrazených dokladů" vyberu přijatou fakturu a zkontroluju, zda je uveden správný dodavatel a datum splatnosti, poté dám zas "OK"
+39. V kartě "úhrada" zkontroluju částku a dám "OK"
+40. V kartě "seznam hrazených dokladů" dám "OK"
+41. Načte se mi karta "výdajový bankovní doklad", zkontroluju zde "bankovní účet" a doplním "předkontaci" (v kartě "vyberte předkontaci ze seznamu" zvolím "nákup zboží" a dám "OK")
+42. Dále zde nastavím "členění DPH", na kartě "vyberte členění DPH" označím "přijaté zdanitelné plnění tuzemsko - nárok na odpočet" a dám "OK"
+43. Kartu "výdajový bankovní doklad" zkontroluju a dám "OK"
+44. Peněžní deník opět zavírám
