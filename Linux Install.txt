@@ -1,0 +1,58 @@
+Instalace Softwaru
+1. U instalace před Graphical Install zůstává vše tak, jak je, maximálně měním velikost disku
+2. Vyberu Graphical install
+3. Jazyk Angličtina
+4. Zemi vyberu other -> Europe -> Czechia
+5. Default locale settings vyberu US (en_US.UTF-8)
+6. Keymap American English
+7. Hostname podle zadání
+8. Domain name taky podle zadání (domena.cz)
+9. Heslo nejspíš podle zadání také
+10. Full name for the user nejspíš podle zadání taky
+11. Username taky podle zadání či vytvořím na základě Full name (michal)
+12. Partitioning method MANUAL
+13. Vyberu SCSI33 a naformátuju ho
+14. Vytvořím tři disky z maximální možné kapacity a vytvořím jeden primary jako root, dva logical jako home a swap
+15. Debian archive memory country Czechia
+16. Debian archive mirror merlin.fit.vutbr.cz
+17. HTTP proxy nic nezadávám
+18. Software ke stažení nechám jen standard system utilities
+19. Nainstalujeme GRUB boot loader do primary drive, vybereme device pro boot loader instalaci /dev/sda
+
+Instalace v Linuxu (1.část)
+1. nainstaluju MC pomocí příkazu apt install mc
+
+Instalace SSH
+1. nainstaluju SSH server pomocí příkazu apt install openssh-server
+2. V MC zakážu přístup roota, v /etc/ssh/sshd.config najdu PermitRootLogin a napíšu tento příkaz jako PermitRootLogin no a ODKOMENTUJU ho (při výběru možností 1-3, vyberu 2)
+3. Přidám úplně naspod příkaz AllowGroups (název skupiny), VŠE, co chci aby FUNGOVALO, musí být ODKOMENTOVÁNO
+
+Instalace v Linuxu (2.část)
+1. Přídám uživatele pomocí příkazu adduser (vždy vyplním jen username, fullname, heslo)
+
+Instalace DNS
+1. příkaz apt install dnsmasq
+2. Pomocí příkazu hostname -I zjistím Adresu
+3. V mc v /etc/hosts připíšu příkaz adresa server.nazev_domeny.cz (např. 192.168.84.132 server.domena.cz)
+4. Nainstaluju apache2 pomocí příkazu apt install apache2 (kontrola funkčnosti přes příkaz systemctl status apache2, restart přes příkaz systemctl restart apache2)
+
+Povolení přístupu uživatelů přes Putty
+1. přidám přes příkaz adduser skupinu (např. admins)
+2. v /etc/group připíšu do příkazu admins za dvojtečku username
+3. v Putty i všude jinde píšu ip která mi vyběhla u příkazu hostname -I
+4. v Putty se normálně přihlásím jako uživatel, který má přístup v té dané skupině
+
+Povolení přístupu uživatelů
+1. v /etc/hosts.deny napíšu příkaz sshd: ALL (nikdo se nepřipojí k SSH kromě těch, kteří jsou napsáni v allow)
+2. v /etc/hosts.allow napíšu příkaz sshd: IP adresa která se může připojit k SSH (například adresa mýho komplu, kterou si zjistím přes cmd prompt pomocí příkazu ipconfig (192.168.84.0/24)
+
+DHCP
+1. V /etc/dnsmasq.conf si najdu u prvního dhcp range od zhora pak změním ip adresy, který chci aby byly přidělovány společně na jak dlouho
+
+Statická IP
+1. v /etc/network/interfaces si připíšu příkaz 1.řádek: auto ens33, 2.řádek: iface ens33 inet static, 3.řádek: address daná adresa, 4.řádek: netmask maska sítě, 5.řádek: gateway
+
+NTP
+1. v příkazovém řádku v Linuxu napíšu příkaz apt install ntp
+2. Kdyby se někdo ptal, tak router je nastaven tak, že nikoho kromě těch kteří mají přístup k němu, nepustí dovnitř
+3. v /etc/ntpsec/ntp.conf připíšu příkaz server název_domény (například tak.cesnet.cz)
